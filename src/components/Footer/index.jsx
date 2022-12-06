@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import classes from './Footer.module.css';
 
 export function Footer() {
@@ -10,30 +11,28 @@ export function Footer() {
         <div className={classes.overview}>
           <h4>Overview</h4>
           <ul>
-            {/* あとでaタグをLinkに変更！ */}
             <li>
-              <a href='#'>Top</a>
+              <Link href='/'>Top</Link>
             </li>
             <li>
-              <a href='#'>About</a>
+              <Link href='/about'>About</Link>
             </li>
             <li>
-              <a href='#'>Contact</a>
+              <Link href='/contact'>Contact</Link>
             </li>
           </ul>
         </div>
         <div className={classes.technology}>
           <h4>Technology</h4>
           <ul>
-            {/* あとでaタグをLinkに変更！ */}
             <li>
-              <a href='#'>Next.js</a>
+              <Link href='/'>Next.js</Link>
             </li>
             <li>
-              <a href='#'>Sass</a>
+              <Link href='/'>Sass</Link>
             </li>
             <li>
-              <a href='#'>GitHub</a>
+              <Link href='/'>GitHub</Link>
             </li>
           </ul>
         </div>
