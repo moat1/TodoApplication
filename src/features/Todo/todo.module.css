@@ -1,0 +1,38 @@
+.feature {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+.formArea {
+  display: flex;
+}
+.form {
+  margin: 50px;
+  height: 45px;
+}
+.input {
+  height: 45px;
+  width: 250px;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(174, 174, 174);
+}
+.input:hover {
+  background-color: rgb(249, 249, 249);
+}
+.addBtn {
+  margin: 50px 0 50px 0;
+  height: 45px;
+  width: 60px;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.addBtn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s;
+}
