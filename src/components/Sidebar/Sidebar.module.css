@@ -1,5 +1,8 @@
 .sidebar {
+  min-height: 70vh;
   width: 200px;
   background-color: aliceblue;
+  margin: 10px;
   padding: 20px;
+  border-radius: 20px;
 }
