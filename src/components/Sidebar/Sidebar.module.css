@@ -1,8 +1,31 @@
 .sidebar {
   min-height: 70vh;
-  width: 200px;
-  background-color: aliceblue;
-  margin: 10px;
-  padding: 20px;
+  width: 170px;
+  background-color: rgb(247, 247, 247);
+  margin: 20px;
+  padding: 15px;
   border-radius: 20px;
+}
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+.createNewPost,
+.latest {
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.createNewPost:hover,
+.latest:hover {
+  background-color: white;
+  color: rgb(0, 136, 255);
+}
+.createIcon {
+  margin-right: 10px;
+}
+.viewListIcon {
+  margin-right: 10px;
 }
