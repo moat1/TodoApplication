@@ -11,14 +11,16 @@ export function Header() {
       <ul className={classes.links}>
         <li
           className={`${classes.link} ${
-            router.pathname.endsWith('/') ? classes.current : classes.noncurrent
+            router.pathname.startsWith('/top')
+              ? classes.current
+              : classes.noncurrent
           }`}
         >
-          <Link href='/'>Top</Link>
+          <Link href='/top'>Top</Link>
         </li>
         <li
           className={`${classes.link} ${
-            router.pathname.endsWith('/about')
+            router.pathname.startsWith('/about')
               ? classes.current
               : classes.noncurrent
           }`}
@@ -27,7 +29,7 @@ export function Header() {
         </li>
         <li
           className={`${classes.link} ${
-            router.pathname.endsWith('/contact')
+            router.pathname.startsWith('/contact')
               ? classes.current
               : classes.noncurrent
           }`}

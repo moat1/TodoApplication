@@ -3,57 +3,50 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(247, 247, 247);
-  min-height: 200px;
+  min-width: 625px;
   border-top: 2px solid rgb(238, 238, 238);
   padding: 0 20% 0 20%;
 }
 .footerTop {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .logo {
   display: flex;
   align-items: center;
+  margin: 0 30px 0 30px;
 }
-/* .overview {
-
-} */
-.overview h4 {
+.footerLink {
+  margin: 0 30px 0 30px;
+}
+.footerLink p {
   font-weight: 400;
 }
-.overview ul {
+.footerLink ul {
   list-style: none;
   padding-left: 0%;
 }
-.overview li {
+.footerLink li {
   margin: 2px;
   font-weight: 300;
 }
-.overview li:hover {
-  text-decoration: underline;
-}
-/* .technology {
-} */
-.technology h4 {
-  font-weight: 400;
-}
-.technology ul {
-  list-style: none;
-  padding-left: 0%;
-}
-.technology li {
-  margin: 2px;
-  font-weight: 300;
-}
-.technology li:hover {
+.footerLink li:hover {
   text-decoration: underline;
 }
 .footerBottom {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: rgb(86, 86, 86);
+  border-top: 2px solid rgb(238, 238, 238);
 }
-.footerBottom p {
-  font-size: 14px;
+.gitHubIcon,
+.darkModeIcon {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+}
+.gitHubIcon:hover,
+.darkModeIcon:hover {
+  color: black;
 }

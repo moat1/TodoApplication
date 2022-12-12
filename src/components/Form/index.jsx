@@ -1,7 +1,7 @@
-import { userAgent } from 'next/server';
 import { useRef } from 'react';
 import classes from '/src/components/Form/Form.module.css';
 import CreateIcon from '@mui/icons-material/Create';
+import AddIcon from '@mui/icons-material/Add';
 
 export function Form() {
   const todoTitle = useRef(null);
@@ -26,11 +26,11 @@ export function Form() {
   };
 
   return (
-    <form className={classes.create_new_post}>
-      <h3>
-        <CreateIcon className={classes.create} />
+    <form className={classes.form}>
+      <h1>
+        <CreateIcon className={classes.createIcon} />
         新規投稿
-      </h3>
+      </h1>
       <p>タイトル</p>
       <input
         className={classes.titleInput}
@@ -46,7 +46,11 @@ export function Form() {
         ref={todoContents}
       ></textarea>
       <br></br>
-      <button onClick={addBtn}>+ Add</button>
+      <button onClick={addBtn}>
+        <p className={classes.addBtnContents}>
+          <AddIcon className={classes.addIcon} /> Create New Todo
+        </p>
+      </button>
     </form>
   );
 }
