@@ -7,7 +7,9 @@ export function Header() {
 
   return (
     <header className={classes.header}>
-      <h1 className={classes.title}>Todo App</h1>
+      <h1 className={classes.title}>
+        <Link href='/top'>Todo App</Link>
+      </h1>
       <ul className={classes.links}>
         <li
           className={`${classes.link} ${
