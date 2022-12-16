@@ -3,6 +3,7 @@ import classes from '/src/styles/Home.module.css';
 import { Header } from '/src/components/Header';
 import { Footer } from '/src/components/Footer';
 import { Sidebar } from '/src/components/Sidebar';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,16 +19,35 @@ export default function Home() {
           <h1>Hello Guest !</h1>
           <h2>こちらはTopページです。</h2>
           <p>
-            このアプリの概要について知りたい場合はヘッダーの「About」をクリックしてください。
+            このアプリの概要について知りたい場合はヘッダーの「
+            <Link className={classes.topLink} href='/about'>
+              About
+            </Link>
+            」をクリックしてください。
           </p>
           <p>
-            このアプリについて問い合わせたい場合はヘッダーの「Contact」をクリックしてください。
+            このアプリについて問い合わせたい場合はヘッダーの「
+            <Link className={classes.topLink} href='/contact'>
+              Contact
+            </Link>
+            」をクリックしてください。
           </p>
           <p>
-            Todoリストを作りたい場合はサイドバーの「新規作成」をクリックしてください。
+            Todoリストを作りたい場合はサイドバーの「
+            <Link
+              className={classes.topLink}
+              href='/top/sidebar/create_new_post'
+            >
+              新規作成
+            </Link>
+            」をクリックしてください。
           </p>
           <p>
-            これまでに作ったTodoリストを見る・編集する場合はサイドバーの「新着順」をクリックしてください。
+            これまでに作ったTodoリストを見る・編集する場合はサイドバーの「
+            <Link className={classes.topLink} href='/top/sidebar/latest'>
+              新着順
+            </Link>
+            」をクリックしてください。
           </p>
         </div>
       </div>

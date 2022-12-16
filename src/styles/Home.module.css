@@ -11,6 +11,22 @@
 .topContents {
   margin: 50px;
 }
+.topContents h1 {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+.topContents h2 {
+  display: flex;
+  justify-content: center;
+}
 .topContents p {
   text-indent: 1rem;
+}
+.topLink {
+  text-decoration: underline;
+}
+.topLink:hover {
+  color: rgb(0, 136, 255);
 }

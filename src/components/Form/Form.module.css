@@ -12,25 +12,25 @@
   font-weight: 300;
 }
 .titleInput {
-  height: 30px;
+  height: 45px;
   width: 300px;
   border: none;
-  border-bottom: 1px solid rgb(238, 238, 238);
+  border: 1px solid #dfe1e5;
   outline: none;
 }
 .titleInput:hover {
-  border-bottom: 1px solid rgb(188, 188, 188);
+  box-shadow: 1px 2px 10px 1px #dfe1e5;
 }
-.form textarea {
+.textInput {
   height: 100px;
   width: 300px;
   border: none;
-  border: 1px solid rgb(238, 238, 238);
+  border: 1px solid #dfe1e5;
   outline: none;
   resize: none;
 }
-.form textarea:hover {
-  border: 1px solid rgb(188, 188, 188);
+.textInput:hover {
+  box-shadow: 1px 2px 10px 1px #dfe1e5;
 }
 .form button {
   margin-top: 20px;
